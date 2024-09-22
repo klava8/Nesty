@@ -1,0 +1,184 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    font-family: "Afacad", sans-serif;
+}
+
+.container{
+    padding: 0 80px;
+    height: 100%;
+}
+
+.indent{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 150px;
+}
+
+.bg_gradient{
+    background: linear-gradient(to bottom, #9B9EAE, #404148);
+}
+
+.main {
+    height: 100vh;
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 200px;
+
+        p, h1{
+            color: white;
+            font-size: 64px;
+            max-width: 680px;
+            font-weight: 500;
+        }
+
+        h1 {
+            span {
+                color: black;
+                font-size: 128px;
+            }
+        }
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+    }
+
+    &__card{
+        background-color: black;
+        width: 100%;
+        height: 350px;
+        border-radius: 40px;
+        padding: 30px 50px 80px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-img{
+            display: flex;
+            justify-content: end;
+        }
+
+        &-text{
+            color: #9B9EAE;
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+}
+
+.header{
+
+    &__logo{
+        height: 100px;
+    }
+    
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+        align-items: center;
+    }
+
+    &__nav{
+        display: flex;
+        gap: 100px;
+        font-size: 40px;
+        a {
+            color: black;
+        }
+    }
+}
+
+.sub{
+    height: 100vh;
+
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 120px 80px;
+        height: 100%;
+    }
+
+    &__title{
+        color: black;
+        font-size: 128px;
+        width: 100%;
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    &__card{
+        background-color: #404148;
+        max-height: 400px;
+        max-width: 400px;
+        padding: 30px;
+        width: 100%;
+        border-radius: 40px;
+
+        &-date{
+            color: white;
+            font-size: 27px;
+            margin-bottom: 30px;
+        }
+
+        &-price{
+            color: white;
+            font-size: 21px;
+            margin-left: 40px;
+            margin-bottom: 50px;
+
+            h3 {
+                font-size: 80px;
+            }
+        }
+
+        &-sold{
+            color: white;
+            font-size: 18px;
+
+            display: flex;
+            justify-content: space-between;
+
+            &_orange{
+                font-weight: 900;
+                background-color: #FF0307;
+                padding: 8px 16px;
+                border-radius: 22px;
+            }
+        }
+        
+    }
+
+    &__text{
+        color: white;
+        font-weight: 900;
+        font-size: 36px;
+    }
+}
